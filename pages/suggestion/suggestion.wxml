@@ -1,5 +1,30 @@
 <view class="section">
-  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/>
+  <navigator url="/pages/search/search?title=navigate" hover-class="navigator-hover"><image calss="search" src="../../img/search.jpg"></image></navigator>
+</view>
+<view class="textarea">
+  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/><text class="quxiao" style="color:green">取消</text>
+</view>
+<view class="remen">
+  <text class="info_remen">热门搜索</text>
+  <text class="info_remen_li">武汉欢乐谷</text>
+  <text class="info_remen_li">迪士尼</text>
+</view>
+<view class="lishi">
+  <text class="info_remen">历史搜索</text>
+  <view class="lishi_li">
+    <view class="section">
+      <image calss="search" src="../../img/search.jpg"></image><text class="info_remen_li">武汉欢乐谷</text>
+    </view>
+  </view>
+  <view class="lishi_li">
+    <view class="section">
+    <image calss="search" src="../../img/search.jpg"></image><text class="info_remen_li">迪士尼</text>
+    </view>
+  </view>
+  <view>
+    <text id="clean_search">清除搜索记录</text>
+  </view>
+  
 </view>
 <view class="sug_info">
   <text>{{sugData}}</text>

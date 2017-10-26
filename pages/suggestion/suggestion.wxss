@@ -3,10 +3,76 @@ page {
 }
 
 input {
-    margin: 10px 10px;
+    margin: 0px;
     background-color: #fff;
+    width: 80%;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 .sug_info {
     margin: 15px 10px;
+}
+
+.section image
+{
+  height: 50rpx;
+  width: 50rpx;
+}
+.remen image
+{
+  height: 50rpx;
+  width: 50rpx;
+}
+.section
+{
+  display: inline-block
+}
+
+.textarea
+{
+  width: 90%;
+  display: inline-block;
+}
+.quxiao
+{
+  display:inline;
+}
+.info_remen
+{
+  display: block;
+  border-bottom:solid;
+  border-width:1px;
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+.remen .info_remen_li
+{
+  display: block;
+  border-bottom:solid;
+  border-width:1px;
+  border-color: #f0f0f0;
+}
+
+.lishi .section .info_remen_li
+{
+  display: inline-block;
+  border-color: #f0f0f0;
+}
+
+#clean_search
+{
+  text-align: center;
+  display: block;
+  border-bottom:solid;
+  border-width:1px;
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+}
+.lishi_li
+{
+  border-bottom:solid;
+  border-width:1px;
+  border-color: #f0f0f0;
 }

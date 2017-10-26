@@ -1,0 +1,131 @@
+<view>
+  <swiper class="swiper-menu" indicator-dots="true" autoplay="true" interval="5000" duration="1500">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class="swiper-imgs">
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="nav">
+  <view class="search-btn">
+    <image src="../../img/scenic.jpg"></image>
+  </view>
+<view class="section">
+  <image calss="search" src="../../img/search.jpg"></image>
+</view>
+<view class="textarea">
+  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/><text class="quxiao" style="color:green">取消</text>
+</view>
+</view>
+<view class="aslide-menu">
+  <scroll-view class="aslide-box" scroll-y="true" scroll-x="false">
+    <view class="{{status==0 ? 'in' : ''}}" data-index="0" bindtap="changeMenu">好评度最高</view>
+    <view class="{{status==1 ? 'in' : ''}}" data-index="1" bindtap="changeMenu">这周热度最高</view>
+    <view class="{{status==2 ? 'in' : ''}}" data-index="2" bindtap="changeMenu">附近的游乐园</view>
+  </scroll-view>
+  <view class="aslide-content-section">
+    <scroll-view class="aslide-content" scroll-y="false" scroll-x="true" scroll-into-view="{{currentPosition}}" scroll-with-animation="true" bindscrolltolower="scrollBottom">
+      <view id="order0" class="aslide-item">
+        <text class="aslide-item-title">好评度最高</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">武汉欢乐谷</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view id="order1" class="aslide-item">
+        <text class="aslide-item-title">这周热度最高</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img" bindtap="previewImages">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view id="order2" class="aslide-item">
+        <text class="aslide-item-title">附近的游乐园</text>
+        <view class="aslide-item-info">
+          <view class="aslide-item-img">
+            <image src="/img/scenic/wuhanhuanlegu/wuhanhuanlegu.jpg"></image>
+          </view>
+          <view class="cart-info-container">
+            <text class="food-name">xxx游乐园</text>
+            <view>
+              <block class="marks" wx:for="{{[1, 2, 3, 4, 5]}}" >
+                <image class="mark" src="../../img/scenic.jpg"></image>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
