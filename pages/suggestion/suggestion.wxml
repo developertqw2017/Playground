@@ -1,5 +1,5 @@
 <view class="section">
-  <navigator url="/pages/search/search?title=navigate" hover-class="navigator-hover"><image calss="search" src="../../img/search.jpg"></image></navigator>
+  <navigator url="/pages/suggestion/suggestion?title=navigate" hover-class="navigator-hover"><image calss="search" src="../../img/search.jpg"></image></navigator>
 </view>
 <view class="textarea">
   <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/><text class="quxiao" style="color:green">取消</text>

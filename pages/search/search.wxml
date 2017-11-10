@@ -10,7 +10,9 @@
     <image calss="search" src="../../img/search.jpg"></image>
   </view>
   <view id="info_shangjia">商家信息</view>
-  <view id="goupiao" style="color:green">购票</view>
+  <navigator id="goupiao" url="/pages/nopay/nopay">
+  <view  style="color:green">购票</view>
+  </navigator>
 </view>
 <view class="map_container">
   <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>

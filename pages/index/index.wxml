@@ -11,11 +11,13 @@
   <view class="search-btn">
     <image src="../../img/scenic.jpg"></image>
   </view>
-<view class="section">
-  <image calss="search" src="../../img/search.jpg"></image>
-</view>
+<navigator url="/pages/suggestion/suggestion?title=se">
+  <view class="section">
+    <image calss="search" src="../../img/search.jpg"></image>
+  </view>
+</navigator>
 <view class="textarea">
-  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/><text class="quxiao" style="color:green">取消</text>
+  <input placeholder="输入关键字"  type="text" bindinput="bindKeyInput"/>
 </view>
 </view>
 <view class="aslide-menu">

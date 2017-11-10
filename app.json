@@ -2,8 +2,10 @@
   "pages": [
     "pages/search/search",
     "pages/suggestion/suggestion",
-    "pages/weather/weather",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/user/user",
+    "pages/nopay/nopay",
+    "pages/cart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,8 +29,8 @@
         "text": "推荐"
       },
       {
-        "pagePath": "pages/suggestion/suggestion",
-        "text": "suggestion"
+        "pagePath": "pages/user/user",
+        "text": "个人信息"
       }
     ]
   }
